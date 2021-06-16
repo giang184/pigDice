@@ -51,14 +51,14 @@ $(document).ready(function() {
       myPigDice.turnScore = 0;
       myPigDice.displayTurnScore();
       if(myPigDice.playerTurn) {
-        img.src = "../image/1.PNG";
+        img.src = "image/1.PNG";
         source1.appendChild(img);
         source1.style.backgroundColor = "lightblue";
         document.getElementById("player1").style.backgroundColor = "white";
         document.getElementById("player2").style.backgroundColor = "lightcoral";
       }
       else {
-        img.src = "../image/12.PNG";
+        img.src = "image/12.PNG";
         source1.appendChild(img);
         source1.style.backgroundColor = "lightcoral";
         document.getElementById("player1").style.backgroundColor = "lightblue";
@@ -68,19 +68,19 @@ $(document).ready(function() {
     }
     else {
       if(roll === 2) {
-        img.src = "../image/2.PNG";
+        img.src = "image/2.PNG";
       }
       if(roll === 3) {
-        img.src = "../image/3.PNG";
+        img.src = "image/3.PNG";
       }
       if(roll === 4) {
-        img.src = "../image/4.PNG";
+        img.src = "image/4.PNG";
       }
       if(roll === 5) {
-        img.src = "../image/5.PNG";
+        img.src = "image/5.PNG";
       }
       if(roll === 6) {
-        img.src = "../image/6.PNG";
+        img.src = "image/6.PNG";
       }
       source1.appendChild(img);
       if(myPigDice.playerTurn) {
@@ -98,14 +98,14 @@ $(document).ready(function() {
     if(myPigDice.playerTurn) { 
       myPigDice.player1Score += myPigDice.turnScore;
       if(myPigDice.player1Score >= 30) {
-        img.src = "../image/win1.PNG";
+        img.src = "image/win1.PNG";
         source1.appendChild(img);
         document.getElementById("player1").style.backgroundColor = "white";
         document.getElementById("roll").disabled = true;
         document.getElementById("hold").disabled = true;
       }
       else{
-        img.src = "../image/p2.PNG";
+        img.src = "image/p2.PNG";
         source1.appendChild(img);
         source1.style.backgroundColor = "lightcoral";
         document.getElementById("player1").style.backgroundColor = "white";
@@ -120,14 +120,14 @@ $(document).ready(function() {
     else {
       myPigDice.player2Score += myPigDice.turnScore;
       if(myPigDice.player2Score >= 30) {
-        img.src = "../image/win2.PNG";
+        img.src = "image/win2.PNG";
         source1.appendChild(img);
         document.getElementById("player2").style.backgroundColor = "white";
         document.getElementById("roll").disabled = true;
         document.getElementById("hold").disabled = true;
       }
       else{
-        img.src = "../image/p1.PNG";
+        img.src = "image/p1.PNG";
         source1.appendChild(img);
         source1.style.backgroundColor = "lightblue";
         document.getElementById("player1").style.backgroundColor = "lightblue";
@@ -142,7 +142,7 @@ $(document).ready(function() {
 
   $("button#newGame").click(function() {
     myPigDice.newGame();
-    img.src = "../image/new.PNG";
+    img.src = "image/new.PNG";
     source1.appendChild(img);
     document.getElementById("player1").style.backgroundColor = "lightblue";
     document.getElementById("player2").style.backgroundColor = "white";
